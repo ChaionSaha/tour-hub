@@ -1,0 +1,7 @@
+.navlink-container {
+	@apply text-xl font-semibold  text-[#565656];
+
+	& > li {
+		@apply cursor-pointer hover:text-black duration-150;
+	}
+}
