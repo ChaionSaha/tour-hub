@@ -1,6 +1,7 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import logo from '../../img/logo.png';
-import './Shared.scss';
+import './Home.scss';
 
 const Navbar = ({ hotelsRef, blogsRef, guidesRef }) => {
 	const scrollIntoView = (elementRef) => {
@@ -8,12 +9,14 @@ const Navbar = ({ hotelsRef, blogsRef, guidesRef }) => {
 	};
 	return (
 		<div className='container flex items-center justify-between py-5'>
-			<img src={logo} alt='' className='w-52' />
-			<ul className='flex gap-x-10 navlink-container'>
-				<li onClick={() => scrollIntoView(hotelsRef)}>Hotels</li>
-				<li onClick={() => scrollIntoView(blogsRef)}>Trips Blogs</li>
-				<li onClick={() => scrollIntoView(guidesRef)}>Tour Guides</li>
-			</ul>
+			<NavLink to='/'>
+				<img src={logo} alt='' className='w-52' />
+			</NavLink>
+			<div className='flex gap-x-10 navlink-container'>
+				<NavLink to='/hotels'>Hotels</NavLink>
+				<NavLink to='/blogs'>Trips Blogs</NavLink>
+				<NavLink to='/tourguides'>Tour Guides</NavLink>
+			</div>
 		</div>
 	);
 };
