@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
+import { Outlet } from 'react-router-dom';
 import HeroSection from '../Shared/HeroSection';
-import BlogSection from './BlogSection';
-import TripSection from './TripSection';
 
 const Homepage = () => {
 	const [imgLink, setImgLink] = useState(
@@ -10,8 +9,7 @@ const Homepage = () => {
 	return (
 		<div>
 			<HeroSection imgLink={imgLink} />
-			<TripSection />
-			<BlogSection />
+			<Outlet context={[imgLink, setImgLink]} />
 		</div>
 	);
 };
