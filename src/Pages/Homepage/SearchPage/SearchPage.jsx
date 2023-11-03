@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useOutletContext, useSearchParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import CustomTitle from '../../Shared/CustomTitle';
@@ -9,6 +9,7 @@ const SearchPage = () => {
 	const [trips, setTrips] = useState([]);
 	const [loading, setLoading] = useState(true);
 	const [img, setImg] = useOutletContext();
+	const searchRef = useRef(null);
 
 	useEffect(() => {
 		const run = async () => {
@@ -19,6 +20,11 @@ const SearchPage = () => {
 			);
 			setTrips(data);
 			setLoading(false);
+
+			window.scrollTo({
+				top: searchRef.current?.offsetTop,
+				behavior: 'smooth',
+			});
 
 			await axios(
 				`${
@@ -32,7 +38,7 @@ const SearchPage = () => {
 	}, [searchParams]);
 
 	return (
-		<div className='bg-base-200'>
+		<div className='bg-base-200' ref={searchRef}>
 			<div className='container'>
 				<CustomTitle title={'Search'} />
 				{loading ? (

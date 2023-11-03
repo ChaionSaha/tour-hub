@@ -1,9 +1,11 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
 const TripSection = () => {
 	const [places, setPlaces] = useState([]);
+	const navigate = useNavigate();
 
 	useEffect(() => {
 		const run = async () => {
@@ -43,7 +45,12 @@ const TripSection = () => {
 										<p className='text-3xl font-bold'>{p.name}</p>
 										<p>{p.description}</p>
 									</div>
-									<button className='self-start text-white normal-case btn btn-primary'>
+									<button
+										onClick={() => {
+											navigate(`/search?q=${p.shortName}`);
+										}}
+										className='self-start text-white normal-case btn btn-primary'
+									>
 										Explore
 									</button>
 								</div>
