@@ -4,7 +4,7 @@ import logoWhite from '../../img/logo(white).png';
 
 const Footer = () => {
 	return (
-		<div className='bg-black mt-36'>
+		<div className='bg-black '>
 			<div className='container flex flex-col py-16 text-white'>
 				<div className='grid grid-cols-5 gap-x-10'>
 					<div className='flex flex-col gap-y-5'>

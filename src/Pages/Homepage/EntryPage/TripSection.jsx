@@ -24,7 +24,7 @@ const TripSection = () => {
 					tour host, transport facilities on TourHub official.
 				</p>
 			</div>
-			<div className='grid grid-cols-3 gap-3 mt-10'>
+			<div className='grid gap-3 px-5 mt-10 lg:grid-cols-3'>
 				{places &&
 					places.map((p, i) => {
 						return (

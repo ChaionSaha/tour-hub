@@ -8,7 +8,11 @@ const HeroSection = ({ imgLink }) => {
 		register,
 		watch,
 		formState: { errors },
-	} = useForm();
+	} = useForm({
+		defaultValues: {
+			search: '',
+		},
+	});
 	const [isActive, setIsActive] = useState(false);
 	const navigate = useNavigate();
 

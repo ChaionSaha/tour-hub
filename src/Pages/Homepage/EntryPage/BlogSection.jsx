@@ -15,7 +15,7 @@ const BlogSection = () => {
 	return (
 		<div className='container mt-20'>
 			<p className='text-3xl font-bold'>Related blogs for you</p>
-			<div className='grid grid-cols-3 gap-3 mt-10'>
+			<div className='grid grid-cols-3 gap-3 mt-10 mb-20'>
 				{blogs &&
 					blogs.map((b, i) => {
 						return (
