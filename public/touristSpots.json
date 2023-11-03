@@ -4,41 +4,47 @@
 		"name": "Dhaka",
 		"shortName": "dhaka",
 		"description": "Dhaka is the capital city of Bangladesh, known for its vibrant culture, rich history, and bustling markets.",
-		"img": "https://i.ibb.co/pb8KTTq/Rectangle-1071.png"
+		"img": "https://i.ibb.co/pb8KTTq/Rectangle-1071.png",
+		"bgImg": "https://i.ibb.co/N3n23xt/Rectangle-6.jpg"
 	},
 	{
 		"tsid": "2",
 		"name": "Kuakata",
 		"shortName": "kuakata",
 		"description": "Kuakata is a coastal town in Bangladesh known for its panoramic sea view, sandy beach, and colorful sunrise and sunset.",
-		"img": "https://i.ibb.co/X3dQt0C/Rectangle-1072.png"
+		"img": "https://i.ibb.co/X3dQt0C/Rectangle-1072.png",
+		"bgImg": ""
 	},
 	{
 		"tsid": "3",
 		"name": "Jaflong",
 		"shortName": "jaflong",
 		"description": "Jaflong is famous for its rolling hills, pristine river, and collection of unique stone formations.",
-		"img": "https://i.ibb.co/S7BmXhh/Rectangle-1073.png"
+		"img": "https://i.ibb.co/S7BmXhh/Rectangle-1073.png",
+		"bgImg": "https://i.ibb.co/N3n23xt/Rectangle-6.jpg"
 	},
 	{
 		"tsid": "4",
 		"name": "Saint Martin",
 		"shortName": "saint-martin",
 		"description": "Saint Martin is a small island in the Bay of Bengal, known for its clear turquoise waters, white sandy beaches, and coral reefs.",
-		"img": "https://i.ibb.co/HppR4J7/Rectangle-1074.png"
+		"img": "https://i.ibb.co/HppR4J7/Rectangle-1074.png",
+		"bgImg": ""
 	},
 	{
 		"tsid": "5",
 		"name": "Chattogram",
 		"shortName": "chattogram",
 		"description": "Saint Martin is a small island in the Bay of Bengal, known for its clear turquoise waters, white sandy beaches, and coral reefs.",
-		"img": "https://i.ibb.co/Kr6G6sc/Rectangle-1075.png"
+		"img": "https://i.ibb.co/Kr6G6sc/Rectangle-1075.png",
+		"bgImg": ""
 	},
 	{
 		"tsid": "6",
 		"name": "Cox's Bazar",
 		"shortName": "cox's-bazar",
 		"description": "Saint Martin is a small island in the Bay of Bengal, known for its clear turquoise waters, white sandy beaches, and coral reefs.",
-		"img": "https://i.ibb.co/Nmr7d7y/unsplash-ue-Bmz9-K8z-Tg.png"
+		"img": "https://i.ibb.co/Nmr7d7y/unsplash-ue-Bmz9-K8z-Tg.png",
+		"bgImg": "https://i.ibb.co/12KJ5n5/shifaaz-shamoon-Rl9l9m-L6-Pvs-unsplash-2.png"
 	}
 ]

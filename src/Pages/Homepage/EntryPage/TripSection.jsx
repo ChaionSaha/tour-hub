@@ -8,7 +8,6 @@ const TripSection = () => {
 	useEffect(() => {
 		const run = async () => {
 			const { data } = await axios('/touristSpots.json');
-			console.log(data);
 			setPlaces(data);
 		};
 		run().catch((err) => toast.error(err.message));

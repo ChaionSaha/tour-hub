@@ -1,0 +1,138 @@
+[
+	{
+		"tsid": "6",
+		"tid": "1",
+		"name": "Cox's Bazar - Saint Martin's Island",
+		"rating": "4.9",
+		"duration": "4",
+		"img": "https://i.ibb.co/Bwbjwb5/Rectangle-2888.png",
+		"transport": "Bus, AC Bus/ Micro( Cox-Tek-Cox)Ship TicketKEARI Cruise (Pearl Lounge) Local Van(St. Martin)",
+		"special": "Twin share accommodation AC-Cox’s BazarNon AC- ST. Martin Breakfast, Lunch, Dinner (1 special lunch in Keari Cruise and Dine)",
+		"days": [
+			{
+				"did": "1",
+				"description": "Leave Dhaka by reserved car/coach/train/Air for Sylhet. The distance is around 341 km. Transfer to the Hotel."
+			},
+			{
+				"did": "2",
+				"description": "After breakfast visit the Holy Shrine of Muslim Saints. You will also visit the Tamabil and Jafflong - where there is a beautiful river flowing from India to Bangladesh. Watch the stone collection activities and have a look the life style of local khasia tribes. Overnight."
+			},
+			{
+				"did": "3",
+				"description": "After breakfast start journey to visit Madhabkunda natural Waterfall. After Lunch start journey for Srimongal  the tea capital of Bangladesh. Overnight at Srimongal."
+			},
+			{
+				"did": "4",
+				"description": "After Breakfast move to Dhaka by road. A 04 hours drive from Srimongal. "
+			}
+		]
+	},
+	{
+		"tsid": "6",
+		"tid": "2",
+		"name": "Cox's Bazar - Marin Road",
+		"rating": "4.9",
+		"duration": "2",
+		"img": "https://i.ibb.co/7nj3h1L/Rectangle-2890.png",
+		"transport": "Bus, AC Bus/ Micro( Cox-Tek-Cox)Ship TicketKEARI Cruise (Pearl Lounge) Local Van(St. Martin)",
+		"special": "Twin share accommodation AC-Cox’s BazarNon AC- ST. Martin Breakfast, Lunch, Dinner (1 special lunch in Keari Cruise and Dine)",
+		"days": [
+			{
+				"did": "1",
+				"description": "Leave Dhaka by reserved car/coach/train/Air for Sylhet. The distance is around 341 km. Transfer to the Hotel."
+			},
+			{
+				"did": "2",
+				"description": "After breakfast visit the Holy Shrine of Muslim Saints. You will also visit the Tamabil and Jafflong - where there is a beautiful river flowing from India to Bangladesh. Watch the stone collection activities and have a look the life style of local khasia tribes. Overnight. After Breakfast move to Dhaka by road. A 04 hours drive from Srimongal."
+			}
+		]
+	},
+	{
+		"tsid": "6",
+		"tid": "3",
+		"name": "Cox's Bazar - Marin Road",
+		"rating": "4.9",
+		"duration": "3",
+		"img": "https://i.ibb.co/PT0H72k/Rectangle-2893.png",
+		"transport": "Bus, AC Bus/ Micro( Cox-Tek-Cox)Ship TicketKEARI Cruise (Pearl Lounge) Local Van(St. Martin)",
+		"special": "Twin share accommodation AC-Cox’s BazarNon AC- ST. Martin Breakfast, Lunch, Dinner (1 special lunch in Keari Cruise and Dine)",
+		"days": [
+			{
+				"did": "1",
+				"description": "Leave Dhaka by reserved car/coach/train/Air for Sylhet. The distance is around 341 km. Transfer to the Hotel."
+			},
+			{
+				"did": "2",
+				"description": "After breakfast visit the Holy Shrine of Muslim Saints. You will also visit the Tamabil and Jafflong - where there is a beautiful river flowing from India to Bangladesh. Watch the stone collection activities and have a look the life style of local khasia tribes. Overnight. After Breakfast move to Dhaka by road. A 04 hours drive from Srimongal."
+			},
+			{
+				"did": "3",
+				"description": "After breakfast start journey to visit Madhabkunda natural Waterfall. After Lunch start journey for Srimongal  the tea capital of Bangladesh. Overnight at Srimongal."
+			}
+		]
+	},
+	{
+		"tsid": "1",
+		"tid": "1",
+		"name": "Dhaka",
+		"rating": "4.9",
+		"duration": "3",
+		"img": "https://i.ibb.co/PT0H72k/Rectangle-2893.png",
+		"transport": "Bus, AC Bus/ Micro( Cox-Tek-Cox)Ship TicketKEARI Cruise (Pearl Lounge) Local Van(St. Martin)",
+		"special": "Twin share accommodation AC-Cox’s BazarNon AC- ST. Martin Breakfast, Lunch, Dinner (1 special lunch in Keari Cruise and Dine)",
+		"days": [
+			{
+				"did": "1",
+				"description": "Leave Dhaka by reserved car/coach/train/Air for Sylhet. The distance is around 341 km. Transfer to the Hotel."
+			},
+			{
+				"did": "2",
+				"description": "After breakfast visit the Holy Shrine of Muslim Saints. You will also visit the Tamabil and Jafflong - where there is a beautiful river flowing from India to Bangladesh. Watch the stone collection activities and have a look the life style of local khasia tribes. Overnight. After Breakfast move to Dhaka by road. A 04 hours drive from Srimongal."
+			},
+			{
+				"did": "3",
+				"description": "After breakfast start journey to visit Madhabkunda natural Waterfall. After Lunch start journey for Srimongal  the tea capital of Bangladesh. Overnight at Srimongal."
+			}
+		]
+	},
+	{
+		"tsid": "1",
+		"tid": "2",
+		"name": "Bogra - Dhaka",
+		"rating": "4.9",
+		"duration": "2",
+		"img": "https://i.ibb.co/7nj3h1L/Rectangle-2890.png",
+		"transport": "Bus, AC Bus/ Micro( Cox-Tek-Cox)Ship TicketKEARI Cruise (Pearl Lounge) Local Van(St. Martin)",
+		"special": "Twin share accommodation AC-Cox’s BazarNon AC- ST. Martin Breakfast, Lunch, Dinner (1 special lunch in Keari Cruise and Dine)",
+		"days": [
+			{
+				"did": "1",
+				"description": "Leave Dhaka by reserved car/coach/train/Air for Sylhet. The distance is around 341 km. Transfer to the Hotel."
+			},
+			{
+				"did": "2",
+				"description": "After breakfast visit the Holy Shrine of Muslim Saints. You will also visit the Tamabil and Jafflong - where there is a beautiful river flowing from India to Bangladesh. Watch the stone collection activities and have a look the life style of local khasia tribes. Overnight. After Breakfast move to Dhaka by road. A 04 hours drive from Srimongal."
+			}
+		]
+	},
+	{
+		"tsid": "3",
+		"tid": "1",
+		"name": "Dhaka - Jaflong",
+		"rating": "4.9",
+		"duration": "2",
+		"img": "https://i.ibb.co/7nj3h1L/Rectangle-2890.png",
+		"transport": "Bus, AC Bus/ Micro( Cox-Tek-Cox)Ship TicketKEARI Cruise (Pearl Lounge) Local Van(St. Martin)",
+		"special": "Twin share accommodation AC-Cox’s BazarNon AC- ST. Martin Breakfast, Lunch, Dinner (1 special lunch in Keari Cruise and Dine)",
+		"days": [
+			{
+				"did": "1",
+				"description": "Leave Dhaka by reserved car/coach/train/Air for Sylhet. The distance is around 341 km. Transfer to the Hotel."
+			},
+			{
+				"did": "2",
+				"description": "After breakfast visit the Holy Shrine of Muslim Saints. You will also visit the Tamabil and Jafflong - where there is a beautiful river flowing from India to Bangladesh. Watch the stone collection activities and have a look the life style of local khasia tribes. Overnight. After Breakfast move to Dhaka by road. A 04 hours drive from Srimongal."
+			}
+		]
+	}
+]
