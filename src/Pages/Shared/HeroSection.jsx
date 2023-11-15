@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 
-const HeroSection = ({ imgLink }) => {
+const HeroSection = ({ imgLink, setLoading }) => {
 	const {
 		handleSubmit,
 		register,
@@ -20,6 +20,7 @@ const HeroSection = ({ imgLink }) => {
 		const searchParam = encodeURI(
 			data.search.toLowerCase().split(' ').join('-')
 		);
+		setLoading(true);
 		navigate(`/search?q=${searchParam}`);
 	};
 

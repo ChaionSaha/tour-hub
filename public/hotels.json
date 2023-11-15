@@ -1,0 +1,38 @@
+[
+	{
+		"tsid": "6",
+		"hid": "1",
+		"name": "Long Beach Hotel",
+		"address": "14 Kalatoli, Hotel-Motel Zone, 4700 Cox's Bazar, Bangladesh",
+		"rating": "5",
+		"img": "https://i.ibb.co/QpRVXzd/hotel-1.png",
+		"website": "https://maps.app.goo.gl/F3xLTDc9xHzhH8cB8"
+	},
+	{
+		"tsid": "6",
+		"hid": "2",
+		"name": "Sea Pearl Beach Resort",
+		"address": "Jaliapalong, Innai, 4750 Cox's Bazar, Bangladesh",
+		"rating": "5",
+		"img": "https://i.ibb.co/ZhG7RmT/hotel-2.png",
+		"website": "https://maps.app.goo.gl/F3xLTDc9xHzhH8cB8"
+	},
+	{
+		"tsid": "6",
+		"hid": "3",
+		"name": "Seagull Hotels Ltd.",
+		"address": "8, Hotel Motel Zone, Sea Beach 4701 Cox's Bazar, Bangladesh",
+		"rating": "5",
+		"img": "https://i.ibb.co/xYWypPm/hotel-3.png",
+		"website": "https://maps.app.goo.gl/F3xLTDc9xHzhH8cB8"
+	},
+	{
+		"tsid": "6",
+		"hid": "4",
+		"name": "Hotel the Cox Today",
+		"address": "07, Road - 02, Hotel Motel Zone Kolatoly Road, Bangladesh",
+		"rating": "5",
+		"img": "https://i.ibb.co/wKzZsrt/hotel-4.png",
+		"website": "https://maps.app.goo.gl/F3xLTDc9xHzhH8cB8"
+	}
+]
