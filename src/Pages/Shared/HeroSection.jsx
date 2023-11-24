@@ -27,9 +27,9 @@ const HeroSection = ({ imgLink, setLoading }) => {
 	return (
 		<div
 			style={{ background: `url(${imgLink})` }}
-			className='min-h-[75vh] flex justify-center items-center'
+			className='min-h-[75vh] flex justify-center items-center px-5 lg:px-0'
 		>
-			<div className='container relative p-10 py-12 rounded-xl bg-base-100'>
+			<div className='container relative flex flex-col p-5 lg:p-10 lg:py-12 rounded-xl bg-base-100'>
 				<div className='relative w-full rounded-xl'>
 					<label
 						htmlFor='search'
@@ -55,7 +55,7 @@ const HeroSection = ({ imgLink, setLoading }) => {
 				</div>
 				<button
 					onClick={() => handleSubmit(handleSearch)()}
-					className='absolute bottom-0 px-16 py-5 font-semibold text-white -translate-x-1/2 active:scale-[0.9] duration-150 translate-y-1/2 bg-primary rounded-xl left-1/2'
+					className='lg:absolute self-center bottom-0 px-16 py-5 font-semibold text-white lg:-translate-x-1/2 active:scale-[0.9] duration-150 lg:translate-y-1/2 bg-primary rounded-xl left-1/2'
 				>
 					Search
 				</button>
