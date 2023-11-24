@@ -1,0 +1,146 @@
+[
+	{
+		"tsid": "6",
+		"tgid": "1",
+		"name": "Sadik Hasan",
+		"experience": "2",
+		"rating": "4.9",
+		"bgImg": "https://i.ibb.co/rxhgGK0/tg1bg.png",
+		"img": "https://i.ibb.co/L6dJ30P/tg4.png",
+		"details": {
+			"location": "Dhaka, Bangladesh",
+			"phone": "+88 01717377351",
+			"website": "TourWithSadik.com",
+			"email": "sadik_tour_guide@gmail.com",
+			"bio": "Hello, This is Sadik, from Dhaka, Bangladesh. I have been working as a private tourist guide as well as an operator since 2018. If you want to have a nice trip with a friendly and trustworthy guide, feel free to knock me. I am here to welcome you from the bottom of my heart!",
+			"languages": [
+				{
+					"value": "english",
+					"label": "Engilsh"
+				}
+			],
+			"currencies": [
+				{
+					"value": "usd",
+					"label": "United States Dollar (USD)"
+				},
+				{
+					"value": "eur",
+					"label": "Euro"
+				},
+				{
+					"value": "taka ",
+					"label": "Bangladeshi Taka"
+				}
+			]
+		}
+	},
+	{
+		"tsid": "6",
+		"tgid": "2",
+		"name": "Sadman Sakib",
+		"experience": "2",
+		"rating": "4.9",
+		"bgImg": "https://i.ibb.co/rxhgGK0/tg1bg.png",
+		"img": "https://i.ibb.co/FVRMpqh/tg1.png",
+		"details": {
+			"location": "Dhaka, Bangladesh",
+			"phone": "+88 01717377351",
+			"website": "TourWithSadik.com",
+			"email": "sadik_tour_guide@gmail.com",
+			"bio": "Hello, This is Sadik, from Dhaka, Bangladesh. I have been working as a private tourist guide as well as an operator since 2018. If you want to have a nice trip with a friendly and trustworthy guide, feel free to knock me. I am here to welcome you from the bottom of my heart!",
+			"languages": [
+				{
+					"value": "english",
+					"label": "Engilsh"
+				}
+			],
+			"currencies": [
+				{
+					"value": "usd",
+					"label": "United States Dollar (USD)"
+				},
+				{
+					"value": "eur",
+					"label": "Euro"
+				},
+				{
+					"value": "taka ",
+					"label": "Bangladeshi Taka"
+				}
+			]
+		}
+	},
+	{
+		"tsid": "6",
+		"tgid": "3",
+		"name": "Zahadur Rahman",
+		"experience": "2",
+		"rating": "4.9",
+		"bgImg": "https://i.ibb.co/rxhgGK0/tg1bg.png",
+		"img": "https://i.ibb.co/VmDppTy/tg3.png",
+		"details": {
+			"location": "Dhaka, Bangladesh",
+			"phone": "+88 01717377351",
+			"website": "TourWithSadik.com",
+			"email": "sadik_tour_guide@gmail.com",
+			"bio": "Hello, This is Sadik, from Dhaka, Bangladesh. I have been working as a private tourist guide as well as an operator since 2018. If you want to have a nice trip with a friendly and trustworthy guide, feel free to knock me. I am here to welcome you from the bottom of my heart!",
+			"languages": [
+				{
+					"value": "english",
+					"label": "Engilsh"
+				}
+			],
+			"currencies": [
+				{
+					"value": "usd",
+					"label": "United States Dollar (USD)"
+				},
+				{
+					"value": "eur",
+					"label": "Euro"
+				},
+				{
+					"value": "taka ",
+					"label": "Bangladeshi Taka"
+				}
+			]
+		}
+	},
+	{
+		"tsid": "6",
+		"tgid": "4",
+		"name": "Nobab Akter",
+		"experience": "2",
+		"rating": "4.9",
+		"bgImg": "https://i.ibb.co/rxhgGK0/tg1bg.png",
+		"img": "https://i.ibb.co/VSKSFXp/tg2.png",
+		"details": {
+			"location": "Dhaka, Bangladesh",
+			"phone": "+88 01717377351",
+			"website": "TourWithSadik.com",
+			"email": "sadik_tour_guide@gmail.com",
+			"bio": "Hello, This is Sadik, from Dhaka, Bangladesh. I have been working as a private tourist guide as well as an operator since 2018. If you want to have a nice trip with a friendly and trustworthy guide, feel free to knock me. I am here to welcome you from the bottom of my heart!",
+			"languages": [
+				{
+					"value": "english",
+					"label": "Engilsh"
+				}
+			],
+			"currencies": [
+				{
+					"value": "usd",
+					"label": "United States Dollar (USD)"
+				},
+				{
+					"value": "eur",
+					"label": "Euro"
+				},
+				{
+					"value": "taka ",
+					"label": "Bangladeshi Taka"
+				}
+			]
+		}
+	}
+]

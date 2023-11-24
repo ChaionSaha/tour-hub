@@ -10,6 +10,7 @@ import EntryPage from './Pages/Homepage/EntryPage/EntryPage';
 import Homepage from './Pages/Homepage/Homepage';
 import SearchPage from './Pages/Homepage/SearchPage/SearchPage';
 import Hotels from './Pages/Hotels/Hotels';
+import TourGuideProfile from './Pages/TourGuides/TourGuideProfile/TourGuideProfile';
 import TourGuides from './Pages/TourGuides/TourGuides';
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
 						<Route path='/hotels' element={<Hotels />} />
 						<Route path='/blogs' element={<Blogs />} />
 						<Route path='/tourguides' element={<TourGuides />} />
+						<Route path='/tourguide/:id' element={<TourGuideProfile />} />
 					</Route>
 				</Routes>
 				<ToastContainer

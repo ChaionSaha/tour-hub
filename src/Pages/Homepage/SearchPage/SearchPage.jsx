@@ -4,6 +4,7 @@ import { useOutletContext, useSearchParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import CustomTitle from '../../Shared/CustomTitle';
 import HotelsSection from './HotelsSection';
+import TourGuidesSection from './TourGuidesSection';
 import TripsSection from './TripsSection';
 
 const SearchPage = () => {
@@ -11,6 +12,7 @@ const SearchPage = () => {
 	const [trips, setTrips] = useState([]);
 	const [hotels, setHotels] = useState([]);
 	const [spotName, setSpotName] = useState('');
+	const [tourGuides, setTourGuides] = useState([]);
 
 	const { setImgLink, loading, setLoading } = useOutletContext();
 	const searchRef = useRef(null);
@@ -22,6 +24,7 @@ const SearchPage = () => {
 			);
 			setTrips(data.trips);
 			setHotels(data.hotels);
+			setTourGuides(data.tourGuides);
 			setLoading(false);
 
 			window.scrollTo({
@@ -59,7 +62,12 @@ const SearchPage = () => {
 				) : (
 					<div className=''>
 						<TripsSection trips={trips} />
-						<HotelsSection hotels={hotels} spotName={spotName} />
+						{hotels && hotels.length !== 0 && (
+							<HotelsSection hotels={hotels} spotName={spotName} />
+						)}
+						{tourGuides && tourGuides.length !== 0 && (
+							<TourGuidesSection tourGuides={tourGuides} />
+						)}
 					</div>
 				)}
 			</div>

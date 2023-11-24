@@ -20,8 +20,8 @@ export default {
 		themes: [
 			{
 				mytheme: {
-					primary: '#2DAFBC ',
-					secondary: '#565656 ',
+					primary: '#2DAFBC',
+					secondary: '#565656',
 					accent: '#37cdbe',
 					neutral: '#3d4451',
 					'base-100': '#ffffff',
