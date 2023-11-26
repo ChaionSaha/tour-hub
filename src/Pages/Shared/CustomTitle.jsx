@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet-async';
 const CustomTitle = ({ title }) => {
 	return (
 		<Helmet>
-			<title>{title} - Tour Hub</title>
+			<title>{`${title} - Tour Hub`}</title>
 		</Helmet>
 	);
 };

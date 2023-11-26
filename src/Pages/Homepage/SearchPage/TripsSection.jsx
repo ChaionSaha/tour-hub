@@ -1,6 +1,8 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const TripsSection = ({ trips = [] }) => {
+	const navigate = useNavigate();
 	return (
 		<div className='flex flex-col px-5 py-10 lg:px-0 gap-y-5'>
 			<p className='my-5 text-3xl font-bold'>Available Trips for you</p>
@@ -33,7 +35,12 @@ const TripsSection = ({ trips = [] }) => {
 									<p>{t.special}</p>
 								</div>
 							</div>
-							<button className='px-16 mt-10 text-white normal-case lg:self-start btn btn-primary'>
+							<button
+								onClick={() => {
+									navigate(`/tripdetails/trip/${t.tsid}/${t.tid}`);
+								}}
+								className='px-16 mt-10 text-white normal-case lg:self-start btn btn-primary'
+							>
 								View Details
 							</button>
 						</div>

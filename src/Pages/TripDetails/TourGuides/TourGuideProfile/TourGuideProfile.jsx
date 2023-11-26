@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
-import TourGuidesSection from '../../../Homepage/SearchPage/TourGuidesSection';
+import CustomTitle from '../../../Shared/CustomTitle';
 import TGProfileDetails from './TGProfileDetails';
 import TGProfileHeader from './TGProfileHeader';
 
@@ -33,14 +33,10 @@ const TourGuideProfile = () => {
 	}, [id]);
 
 	return (
-		<div className='bg-base-200'>
+		<div>
+			<CustomTitle title={tGuide.name} />
 			<TGProfileHeader tGuide={tGuide} />
 			<TGProfileDetails tGuide={tGuide} />
-			<div className='container'>
-				{tourGuides && tourGuides.length !== 0 && (
-					<TourGuidesSection tourGuides={tourGuides} />
-				)}
-			</div>
 		</div>
 	);
 };

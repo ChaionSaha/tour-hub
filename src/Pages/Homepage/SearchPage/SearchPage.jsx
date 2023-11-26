@@ -27,7 +27,7 @@ const SearchPage = () => {
 			setTourGuides(data.tourGuides);
 			setLoading(false);
 
-			sessionStorage.setItem('search', JSON.stringify(data.trips.tsid));
+			sessionStorage.setItem('search', JSON.stringify(data.tsid));
 
 			window.scrollTo({
 				top: searchRef.current?.offsetTop,

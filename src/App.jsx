@@ -13,6 +13,7 @@ import Hotels from './Pages/Hotels/Hotels';
 
 import TourGuideProfile from './Pages/TripDetails/TourGuides/TourGuideProfile/TourGuideProfile';
 import TourGuides from './Pages/TripDetails/TourGuides/TourGuides';
+import TripDescription from './Pages/TripDetails/TripDescription/TripDescription';
 import TripDetails from './Pages/TripDetails/TripDetails';
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
 						<Route path='/tourguides' element={<TourGuides />} />
 						<Route path='/tripdetails' element={<TripDetails />}>
 							<Route path='tourguide/:id' element={<TourGuideProfile />} />
+							<Route path='trip/:tsid/:tid' element={<TripDescription />} />
 						</Route>
 					</Route>
 				</Routes>
