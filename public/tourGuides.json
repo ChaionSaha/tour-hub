@@ -1,10 +1,9 @@
 [
 	{
-		"tsid": "6",
+		"tsid": ["1", "2", "6"],
 		"tgid": "1",
 		"name": "Sadik Hasan",
 		"experience": "2",
-		"rating": "4.9",
 		"bgImg": "https://i.ibb.co/rxhgGK0/tg1bg.png",
 		"img": "https://i.ibb.co/L6dJ30P/tg4.png",
 		"details": {
@@ -36,11 +35,11 @@
 		}
 	},
 	{
-		"tsid": "6",
+		"tsid": ["2", "3", "6"],
 		"tgid": "2",
 		"name": "Sadman Sakib",
 		"experience": "2",
-		"rating": "4.9",
+
 		"bgImg": "https://i.ibb.co/rxhgGK0/tg1bg.png",
 		"img": "https://i.ibb.co/FVRMpqh/tg1.png",
 		"details": {
@@ -72,11 +71,11 @@
 		}
 	},
 	{
-		"tsid": "6",
+		"tsid": ["3", "4", "5", "6"],
 		"tgid": "3",
 		"name": "Zahadur Rahman",
 		"experience": "2",
-		"rating": "4.9",
+
 		"bgImg": "https://i.ibb.co/rxhgGK0/tg1bg.png",
 		"img": "https://i.ibb.co/VmDppTy/tg3.png",
 		"details": {
@@ -108,11 +107,11 @@
 		}
 	},
 	{
-		"tsid": "6",
+		"tsid": ["1", "2", "3", "4", "5", "6"],
 		"tgid": "4",
 		"name": "Nobab Akter",
 		"experience": "2",
-		"rating": "4.9",
+
 		"bgImg": "https://i.ibb.co/rxhgGK0/tg1bg.png",
 		"img": "https://i.ibb.co/VSKSFXp/tg2.png",
 		"details": {

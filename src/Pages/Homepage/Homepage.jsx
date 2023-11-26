@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import HeroSection from '../Shared/HeroSection';
+import BlogSection from './EntryPage/BlogSection';
 
 const Homepage = () => {
 	const [imgLink, setImgLink] = useState(
@@ -8,9 +9,10 @@ const Homepage = () => {
 	);
 	const [loading, setLoading] = useState(false);
 	return (
-		<div>
+		<div className='bg-base-200'>
 			<HeroSection imgLink={imgLink} setLoading={setLoading} />
 			<Outlet context={{ imgLink, setImgLink, loading, setLoading }} />
+			<BlogSection />
 		</div>
 	);
 };

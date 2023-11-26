@@ -14,9 +14,6 @@ const TourGuidesSection = ({ tourGuides = [] }) => {
 								key={i}
 								className='flex flex-col p-5 bg-base-100 gap-y-3 rounded-2xl'
 							>
-								<p className='py-1 font-bold text-white px-7 bg-primary w-fit rounded-xl'>
-									{t.rating}
-								</p>
 								<img
 									src={t.img}
 									className='self-center rounded-full w-44 h-44'
@@ -33,7 +30,7 @@ const TourGuidesSection = ({ tourGuides = [] }) => {
 								<button
 									className='text-white btn btn-primary'
 									onClick={() => {
-										navigate(`/tourguide/${t.tgid}`);
+										navigate(`/tripdetails/tourguide/${t.tgid}`);
 									}}
 								>
 									See Profile

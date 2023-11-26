@@ -27,6 +27,8 @@ const SearchPage = () => {
 			setTourGuides(data.tourGuides);
 			setLoading(false);
 
+			sessionStorage.setItem('search', JSON.stringify(data.trips.tsid));
+
 			window.scrollTo({
 				top: searchRef.current?.offsetTop,
 				behavior: 'smooth',
@@ -56,11 +58,11 @@ const SearchPage = () => {
 						<span className='loading loading-spinner loading-lg'></span>
 					</div>
 				) : trips && trips.length === 0 ? (
-					<p className='my-20 text-2xl font-medium text-center bg-base-100'>
+					<p className='my-20 text-2xl font-medium text-center '>
 						Sorry. No trips available now
 					</p>
 				) : (
-					<div className=''>
+					<div className='border border-transparent'>
 						<TripsSection trips={trips} />
 						{hotels && hotels.length !== 0 && (
 							<HotelsSection hotels={hotels} spotName={spotName} />
