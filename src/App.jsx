@@ -11,6 +11,7 @@ import Homepage from './Pages/Homepage/Homepage';
 import SearchPage from './Pages/Homepage/SearchPage/SearchPage';
 import Hotels from './Pages/Hotels/Hotels';
 
+import BlogDetails from './Pages/BlogDetailsPage/BlogDetails';
 import TourGuideProfile from './Pages/TripDetails/TourGuides/TourGuideProfile/TourGuideProfile';
 import TourGuides from './Pages/TripDetails/TourGuides/TourGuides';
 import TripDescription from './Pages/TripDetails/TripDescription/TripDescription';
@@ -28,6 +29,7 @@ const App = () => {
 						</Route>
 						<Route path='/hotels' element={<Hotels />} />
 						<Route path='/blogs' element={<Blogs />} />
+						<Route path='/blogs/:id' element={<BlogDetails />} />
 						<Route path='/tourguides' element={<TourGuides />} />
 						<Route path='/tripdetails' element={<TripDetails />}>
 							<Route path='tourguide/:id' element={<TourGuideProfile />} />

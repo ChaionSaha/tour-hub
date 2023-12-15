@@ -1,13 +1,17 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import './EntryPage.scss';
 
 const BlogSection = () => {
 	const [blogs, setBlogs] = useState([]);
+	const navigate = useNavigate();
 	useEffect(() => {
 		const run = async () => {
-			const { data } = await axios('/blogs.json');
+			const { data } = await axios(
+				`${import.meta.env.VITE_serverLink}/getBlogs`
+			);
 			setBlogs(data);
 		};
 		run().catch((err) => toast.error(err.message));
@@ -22,6 +26,9 @@ const BlogSection = () => {
 							<div
 								key={i}
 								className='flex flex-col cursor-pointer blog justify-end relative min-h-[25vh] p-7 rounded-xl overflow-hidden'
+								onClick={() => {
+									navigate(`/blogs/${b.bid}`);
+								}}
 							>
 								<div className='flex flex-col  z-[100] blog-text'>
 									<p className='text-xl font-bold'>{b.name}</p>

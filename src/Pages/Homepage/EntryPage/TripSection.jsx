@@ -9,7 +9,9 @@ const TripSection = ({ setLoading }) => {
 
 	useEffect(() => {
 		const run = async () => {
-			const { data } = await axios('/touristSpots.json');
+			const { data } = await axios(
+				`${import.meta.env.VITE_serverLink}/getTouristSpots`
+			);
 			setPlaces(data);
 		};
 		run().catch((err) => toast.error(err.message));
