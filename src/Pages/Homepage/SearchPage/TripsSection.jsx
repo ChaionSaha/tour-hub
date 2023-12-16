@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const TripsSection = ({ trips = [] }) => {
 	const navigate = useNavigate();
 	return (
-		<div className='flex flex-col px-5 py-10 lg:px-0 gap-y-5'>
+		<div className='flex flex-col py-10 gap-y-5'>
 			<p className='my-5 text-3xl font-bold'>Available Trips for you</p>
 			{trips.map((t, i) => {
 				return (

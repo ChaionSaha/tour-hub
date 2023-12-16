@@ -50,12 +50,12 @@ const HeroSection = ({ imgLink, setLoading }) => {
 							else setIsActive(false);
 						}}
 						type='text'
-						className='w-full pt-5 input input-primary text-black font-medium input-lg text-xl focus:outline-none z-[100]'
+						className='w-full pt-5  input input-primary text-black font-medium input-lg text-xl focus:outline-none z-[100]'
 					/>
 				</div>
 				<button
 					onClick={() => handleSubmit(handleSearch)()}
-					className='lg:absolute self-center bottom-0 px-16 py-5 font-semibold text-white lg:-translate-x-1/2 active:scale-[0.9] duration-150 lg:translate-y-1/2 bg-primary rounded-xl left-1/2'
+					className='lg:absolute self-center bottom-0 lg:px-16 px-10 py-3 lg:py-5 font-semibold text-white lg:-translate-x-1/2 active:scale-[0.9] duration-150 lg:translate-y-1/2 bg-primary rounded-xl left-1/2 mt-3 lg:mt-0'
 				>
 					Search
 				</button>

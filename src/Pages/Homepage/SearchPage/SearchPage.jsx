@@ -51,7 +51,7 @@ const SearchPage = () => {
 
 	return (
 		<div className='bg-base-200' ref={searchRef}>
-			<div className='container'>
+			<div className='container px-5 lg:px-0'>
 				<CustomTitle title={'Search'} />
 				{loading ? (
 					<div className='flex items-center justify-center w-full h-full py-20'>

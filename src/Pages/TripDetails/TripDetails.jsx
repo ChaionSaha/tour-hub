@@ -25,7 +25,7 @@ const TripDetails = () => {
 	return (
 		<div className='bg-base-200'>
 			<Outlet />
-			<div className='container'>
+			<div className='container px-5 lg:px-0'>
 				{tourGuides && tourGuides.length !== 0 && (
 					<TourGuidesSection tourGuides={tourGuides} />
 				)}

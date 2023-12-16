@@ -9,8 +9,10 @@ const TDHeader = ({ trip = {} }) => {
 				backgroundPosition: 'center',
 			}}
 		>
-			<p className='text-5xl font-bold text-white'>{trip.name}</p>
-			<p className='text-2xl font-semibold text-white'>
+			<p className='text-3xl font-bold text-center text-white lg:text-5xl'>
+				{trip.name}
+			</p>
+			<p className='text-xl font-semibold text-white lg:text-2xl'>
 				{trip.duration} day tour
 			</p>
 		</div>

@@ -3,11 +3,11 @@ import React from 'react';
 
 const HotelsSection = ({ hotels = [], spotName }) => {
 	return (
-		<div className='flex flex-col py-10 gap-y-5'>
+		<div className='flex flex-col py-10 gap-y-5 '>
 			<p className='my-5 text-3xl font-bold'>
 				Recommended Hotels Near {spotName}
 			</p>
-			<div className='grid grid-cols-4 gap-5'>
+			<div className='grid gap-5 lg:grid-cols-4'>
 				{hotels &&
 					hotels.map((h, i) => {
 						return (

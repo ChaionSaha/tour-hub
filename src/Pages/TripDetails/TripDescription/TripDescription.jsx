@@ -35,7 +35,7 @@ const TripDescription = () => {
 			<CustomTitle title={trip.name} />
 			<TDHeader trip={trip} />
 			<TDPlan trip={trip} />
-			<div className='container'>
+			<div className='container px-5 lg:px-0'>
 				{hotels && hotels.length !== 0 && (
 					<HotelsSection hotels={hotels} spotName={spotName} />
 				)}

@@ -4,14 +4,14 @@ const TGProfileDetails = ({ tGuide = {} }) => {
 	return (
 		<>
 			{tGuide.details && (
-				<div className='container flex justify-between'>
-					<div className='flex flex-col w-[60%]'>
+				<div className='container flex flex-col justify-between px-5 gap-y-10 lg:px-0 lg:flex-row'>
+					<div className='flex flex-col lg:w-[60%]'>
 						<p className='mb-3 text-xl font-semibold'>Experience</p>
 						<p>{tGuide.details?.bio}</p>
 
-						<div className='flex items-center mt-5 text-lg gap-x-3'>
-							<p className='self-center font-semibold'>Languages:</p>
-							<div className='flex gap-x-1'>
+						<div className='flex mt-5 text-lg lg:items-center gap-x-3'>
+							<p className='font-semibold lg:self-center'>Languages:</p>
+							<div className='flex flex-wrap gap-x-1'>
 								{tGuide?.details?.languages.map((l, i) => {
 									return (
 										<div key={i}>
@@ -22,9 +22,9 @@ const TGProfileDetails = ({ tGuide = {} }) => {
 								})}
 							</div>
 						</div>
-						<div className='flex items-center mt-5 text-lg gap-x-3'>
-							<p className='self-center font-semibold'>Currencies:</p>
-							<div className='flex gap-x-1'>
+						<div className='flex mt-5 text-lg lg:items-center gap-x-3'>
+							<p className='font-semibold lg:self-center'>Currencies:</p>
+							<div className='flex flex-wrap gap-x-1'>
 								{tGuide?.details?.currencies.map((l, i) => {
 									return (
 										<div key={i}>
@@ -36,7 +36,7 @@ const TGProfileDetails = ({ tGuide = {} }) => {
 							</div>
 						</div>
 					</div>
-					<div className='p-5 border w-[30%] flex flex-col gap-y-10 justify-self-end bg-base-100 rounded-xl '>
+					<div className='p-5 border lg:w-[30%] flex flex-col gap-y-10 justify-self-end bg-base-100 rounded-xl '>
 						<div className='flex flex-col'>
 							<p className='font-semibold'>Location</p>
 							<p>{tGuide.details.location}</p>

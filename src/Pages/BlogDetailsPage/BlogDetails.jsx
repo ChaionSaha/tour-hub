@@ -26,8 +26,13 @@ const BlogDetails = () => {
 			<CustomTitle title={blog.name} />
 			<BlogDetailsHeader img={blog.headerImg} title={blog.name} />
 			<div className='container pt-16'>
-				<div className='w-[60%]'>
-					<ReactQuill value={blog.details} readOnly={true} theme='bubble' />
+				<div className='lg:w-[60%] text-2xl'>
+					<ReactQuill
+						value={blog.details}
+						readOnly={true}
+						className='text-xl'
+						theme='bubble'
+					/>
 				</div>
 			</div>
 			<BlogSection />

@@ -17,9 +17,9 @@ const BlogSection = () => {
 		run().catch((err) => toast.error(err.message));
 	}, []);
 	return (
-		<div className='container mt-20'>
+		<div className='container px-5 mt-20 lg:px-0'>
 			<p className='text-3xl font-bold'>Related blogs for you</p>
-			<div className='grid grid-cols-3 gap-3 mt-10 mb-20'>
+			<div className='grid gap-3 mt-10 mb-20 lg:grid-cols-3'>
 				{blogs &&
 					blogs.map((b, i) => {
 						return (

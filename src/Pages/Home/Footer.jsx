@@ -5,8 +5,8 @@ import logoWhite from '../../img/logo(white).png';
 const Footer = () => {
 	return (
 		<div className='bg-black '>
-			<div className='container flex flex-col py-16 text-white'>
-				<div className='grid grid-cols-5 gap-x-10'>
+			<div className='container flex flex-col px-5 py-16 text-white lg:px-0'>
+				<div className='grid gap-x-10 gap-y-16 lg:grid-cols-5'>
 					<div className='flex flex-col gap-y-5'>
 						<NavLink to='/'>
 							<img src={logoWhite} alt='' />
@@ -32,7 +32,7 @@ const Footer = () => {
 						</div>
 					</div>
 
-					<div className='flex justify-center'>
+					<div className='flex lg:justify-center'>
 						<div className='flex flex-col gap-y-5'>
 							<p className='font-bold'>Links</p>
 							<ul className='flex flex-col gap-y-5'>
@@ -49,7 +49,7 @@ const Footer = () => {
 						</div>
 					</div>
 
-					<div className='flex justify-center'>
+					<div className='flex lg:justify-center'>
 						<div className='flex flex-col gap-y-5'>
 							<p className='font-bold'>Support</p>
 							<ul className='flex flex-col gap-y-5'>
@@ -66,7 +66,7 @@ const Footer = () => {
 						</div>
 					</div>
 
-					<div className='flex justify-center'>
+					<div className='flex lg:justify-center'>
 						<div className='flex flex-col gap-y-5'>
 							<p className='font-bold'>Community</p>
 							<ul className='flex flex-col gap-y-5'>
@@ -83,7 +83,7 @@ const Footer = () => {
 						</div>
 					</div>
 
-					<div className='flex justify-center'>
+					<div className='flex lg:justify-center'>
 						<div className='flex flex-col gap-y-5'>
 							<p className='font-bold'>About</p>
 							<ul className='flex flex-col gap-y-5'>

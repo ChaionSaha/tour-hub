@@ -25,9 +25,9 @@ const TourGuides = () => {
 		<>
 			<CustomTitle title='Tour Guides' />
 			<HeroSection imgLink={imgLink} setLoading={setLoading} />
-			<div className='container py-16'>
+			<div className='container px-5 py-16 lg:px-0'>
 				<p className='mb-5 text-3xl font-bold'>Tour Guides</p>
-				<div className='grid grid-cols-4 gap-5'>
+				<div className='grid gap-5 lg:grid-cols-4'>
 					{tourGuides &&
 						tourGuides.map((t, i) => {
 							return (

@@ -18,17 +18,17 @@ const TripSection = ({ setLoading }) => {
 	}, []);
 
 	return (
-		<div className='container mt-24'>
-			<div className='flex items-center gap-x-20'>
-				<p className='w-1/3 text-3xl font-bold '>
+		<div className='container px-5 mt-24 lg:px-0'>
+			<div className='flex flex-col items-center gap-y-10 lg:flex-row gap-x-20'>
+				<p className='text-3xl font-bold lg:w-1/3 '>
 					Looking for some Place for your next trip?
 				</p>
-				<p className='w-1/2 '>
+				<p className='lg:w-1/2 '>
 					Start planning the trip of your dreams with the help of 100+ hotels,
 					tour host, transport facilities on TourHub official.
 				</p>
 			</div>
-			<div className='grid gap-3 px-5 mt-10 lg:grid-cols-3'>
+			<div className='grid gap-3 mt-10 lg:px-5 lg:grid-cols-3'>
 				{places &&
 					places.map((p, i) => {
 						return (
