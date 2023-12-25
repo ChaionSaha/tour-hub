@@ -12,7 +12,7 @@ const TripsSection = ({ trips = [] }) => {
 						className='flex flex-col p-4 lg:flex-row gap-x-16 gap-y-5 bg-base-100 rounded-xl'
 						key={i}
 					>
-						<img src={t.img} alt='' />
+						<img className='w-[20%] rounded-xl' src={t.img} alt='' />
 						<div className='flex flex-col lg:w-[60%]'>
 							<div className='flex items-center pb-2 mb-5 border-b-2 border-gray-300 gap-x-5'>
 								<p className='text-xl font-semibold'>{t.name}</p>
