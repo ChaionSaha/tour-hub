@@ -16,7 +16,7 @@ const HotelsSection = ({ hotels = [], spotName }) => {
 								className='flex flex-col p-3 bg-base-100 rounded-3xl'
 							>
 								<div className='relative'>
-									<img src={h.img} alt='' className='w-full ' />
+									<img src={h.img} alt='' className='w-full rounded-xl' />
 									<div className='absolute top-[3%] left-[3%] bg-[#fdfdfd96] rounded-lg p-2 gap-x-1 items-center flex'>
 										<StarIcon className='w-4 text-[#ED7D2B]' />
 										<p>{h.rating}</p>
