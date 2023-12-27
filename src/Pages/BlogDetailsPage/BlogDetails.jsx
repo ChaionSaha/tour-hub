@@ -16,7 +16,6 @@ const BlogDetails = () => {
 			const { data } = await axios(
 				`${import.meta.env.VITE_serverLink}/getBlogDetails/${id}`
 			);
-			console.log(data);
 			setBlog(data);
 		};
 		run().catch((err) => toast.error(err.message));
@@ -24,7 +23,7 @@ const BlogDetails = () => {
 	return (
 		<div>
 			<CustomTitle title={blog.name} />
-			<BlogDetailsHeader img={blog.headerImg} title={blog.name} />
+			<BlogDetailsHeader img={blog.bgImg} title={blog.name} />
 			<div className='container pt-16'>
 				<div className='lg:w-[60%] text-2xl'>
 					<ReactQuill

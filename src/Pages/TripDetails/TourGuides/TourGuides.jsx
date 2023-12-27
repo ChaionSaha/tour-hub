@@ -33,7 +33,7 @@ const TourGuides = () => {
 							return (
 								<div
 									key={i}
-									className='flex flex-col p-5 bg-base-100 gap-y-3 rounded-2xl'
+									className='flex flex-col p-5 duration-150 hover:shadow-lg bg-base-100 gap-y-3 rounded-2xl'
 								>
 									<img
 										src={t.img}

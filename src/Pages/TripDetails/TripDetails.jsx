@@ -11,10 +11,9 @@ const TripDetails = () => {
 	useEffect(() => {
 		const run = async () => {
 			const tsid = JSON.parse(sessionStorage.getItem('search'));
+
 			await axios(
-				`${
-					import.meta.env.VITE_serverLink
-				}/getTourGuidesRecom?tsid=${encodeURIComponent(JSON.stringify(tsid))}`
+				`${import.meta.env.VITE_serverLink}/getTourGuidesRecom?tsid=${tsid}`
 			).then((data) => {
 				setTourGuides(data.data);
 			});

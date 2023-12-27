@@ -1,6 +1,6 @@
 [
 	{
-		"tsid": ["1", "2", "6"],
+		"tsid": "1",
 		"tgid": "1",
 		"name": "Sadik Hasan",
 		"experience": "2",
@@ -12,30 +12,12 @@
 			"website": "TourWithSadik.com",
 			"email": "sadik_tour_guide@gmail.com",
 			"bio": "Hello, This is Sadik, from Dhaka, Bangladesh. I have been working as a private tourist guide as well as an operator since 2018. If you want to have a nice trip with a friendly and trustworthy guide, feel free to knock me. I am here to welcome you from the bottom of my heart!",
-			"languages": [
-				{
-					"value": "english",
-					"label": "Engilsh"
-				}
-			],
-			"currencies": [
-				{
-					"value": "usd",
-					"label": "United States Dollar (USD)"
-				},
-				{
-					"value": "eur",
-					"label": "Euro"
-				},
-				{
-					"value": "taka ",
-					"label": "Bangladeshi Taka"
-				}
-			]
+			"languages": ["Engilsh"],
+			"currencies": ["United States Dollar (USD)", "Euro", "Bangladeshi Taka"]
 		}
 	},
 	{
-		"tsid": ["2", "3", "6"],
+		"tsid": "2",
 		"tgid": "2",
 		"name": "Sadman Sakib",
 		"experience": "2",
@@ -48,30 +30,12 @@
 			"website": "TourWithSadik.com",
 			"email": "sadik_tour_guide@gmail.com",
 			"bio": "Hello, This is Sadik, from Dhaka, Bangladesh. I have been working as a private tourist guide as well as an operator since 2018. If you want to have a nice trip with a friendly and trustworthy guide, feel free to knock me. I am here to welcome you from the bottom of my heart!",
-			"languages": [
-				{
-					"value": "english",
-					"label": "Engilsh"
-				}
-			],
-			"currencies": [
-				{
-					"value": "usd",
-					"label": "United States Dollar (USD)"
-				},
-				{
-					"value": "eur",
-					"label": "Euro"
-				},
-				{
-					"value": "taka ",
-					"label": "Bangladeshi Taka"
-				}
-			]
+			"languages": ["Engilsh"],
+			"currencies": ["United States Dollar (USD)", "Euro", "Bangladeshi Taka"]
 		}
 	},
 	{
-		"tsid": ["3", "4", "5", "6"],
+		"tsid": "3",
 		"tgid": "3",
 		"name": "Zahadur Rahman",
 		"experience": "2",
@@ -84,30 +48,12 @@
 			"website": "TourWithSadik.com",
 			"email": "sadik_tour_guide@gmail.com",
 			"bio": "Hello, This is Sadik, from Dhaka, Bangladesh. I have been working as a private tourist guide as well as an operator since 2018. If you want to have a nice trip with a friendly and trustworthy guide, feel free to knock me. I am here to welcome you from the bottom of my heart!",
-			"languages": [
-				{
-					"value": "english",
-					"label": "Engilsh"
-				}
-			],
-			"currencies": [
-				{
-					"value": "usd",
-					"label": "United States Dollar (USD)"
-				},
-				{
-					"value": "eur",
-					"label": "Euro"
-				},
-				{
-					"value": "taka ",
-					"label": "Bangladeshi Taka"
-				}
-			]
+			"languages": ["Engilsh"],
+			"currencies": ["United States Dollar (USD)", "Euro", "Bangladeshi Taka"]
 		}
 	},
 	{
-		"tsid": ["1", "2", "3", "4", "5", "6"],
+		"tsid": "1",
 		"tgid": "4",
 		"name": "Nobab Akter",
 		"experience": "2",
@@ -120,26 +66,8 @@
 			"website": "TourWithSadik.com",
 			"email": "sadik_tour_guide@gmail.com",
 			"bio": "Hello, This is Sadik, from Dhaka, Bangladesh. I have been working as a private tourist guide as well as an operator since 2018. If you want to have a nice trip with a friendly and trustworthy guide, feel free to knock me. I am here to welcome you from the bottom of my heart!",
-			"languages": [
-				{
-					"value": "english",
-					"label": "Engilsh"
-				}
-			],
-			"currencies": [
-				{
-					"value": "usd",
-					"label": "United States Dollar (USD)"
-				},
-				{
-					"value": "eur",
-					"label": "Euro"
-				},
-				{
-					"value": "taka ",
-					"label": "Bangladeshi Taka"
-				}
-			]
+			"languages": ["Engilsh"],
+			"currencies": ["United States Dollar (USD)", "Euro", "Bangladeshi Taka"]
 		}
 	}
 ]

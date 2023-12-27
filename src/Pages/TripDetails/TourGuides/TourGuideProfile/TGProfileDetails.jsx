@@ -15,7 +15,7 @@ const TGProfileDetails = ({ tGuide = {} }) => {
 								{tGuide?.details?.languages.map((l, i) => {
 									return (
 										<div key={i}>
-											{l.label}
+											{l}
 											{i + 1 < tGuide.details.languages.length ? ',' : '.'}
 										</div>
 									);
@@ -28,8 +28,8 @@ const TGProfileDetails = ({ tGuide = {} }) => {
 								{tGuide?.details?.currencies.map((l, i) => {
 									return (
 										<div key={i}>
-											{l.label}
-											{i + 1 < tGuide.details.currencies.length ? ',' : '.'}
+											{l}
+											{i + 1 < tGuide.details.currencies.length ? ', ' : '.'}
 										</div>
 									);
 								})}

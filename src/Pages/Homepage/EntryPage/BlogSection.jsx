@@ -36,9 +36,9 @@ const BlogSection = () => {
 								</div>
 								<div className='absolute top-0 left-0 h-full w-full bg-[rgba(48,48,48,0.3)] z-[10]'></div>
 								<div
-									className='absolute top-0 left-0 h-full w-full z-[1] blog-img'
+									className='absolute top-0 bgImg left-0 h-full w-full z-[1] blog-img'
 									style={{
-										background: `url(${b.shortImg})`,
+										background: `url(${b.img})`,
 										backgroundPosition: 'center',
 										backgroundRepeat: 'no-repeat',
 										backgroundSize: 'cover',
