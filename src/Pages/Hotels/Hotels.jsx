@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 import CustomTitle from '../Shared/CustomTitle';
 import HeroSection from '../Shared/HeroSection';
+import {NavLink, useNavigate} from "react-router-dom";
 
 const Hotels = () => {
 	const [hotels, setHotels] = useState([]);
@@ -11,6 +12,9 @@ const Hotels = () => {
 		'https://i.ibb.co/2g0bYcB/shifaaz-shamoon-Rl9l9m-L6-Pvs-unsplash-1.png'
 	);
 	const [loading, setLoading] = useState(false);
+
+	const navigate=useNavigate();
+
 	useEffect(() => {
 		const run = async () => {
 			const { data } = await axios(
@@ -41,14 +45,11 @@ const Hotels = () => {
 											<p>{h.rating}</p>
 										</div>
 									</div>
-									<p
+									<NavLink to={`/hotels/${h.hid}`}
 										className='mt-5 mb-2 text-xl font-semibold cursor-pointer hover:underline'
-										onClick={() => {
-											window.open(`${h.website}`, '_blank');
-										}}
 									>
 										{h.name}
-									</p>
+									</NavLink>
 									<p className='mb-2 text-sm'>{h.address}</p>
 								</div>
 							);

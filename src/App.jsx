@@ -1,5 +1,5 @@
 import React from 'react';
-import { HelmetProvider } from 'react-helmet-async';
+import {Helmet, HelmetProvider} from 'react-helmet-async';
 import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -12,10 +12,14 @@ import SearchPage from './Pages/Homepage/SearchPage/SearchPage';
 import Hotels from './Pages/Hotels/Hotels';
 
 import BlogDetails from './Pages/BlogDetailsPage/BlogDetails';
+import Login from './Pages/LoginPage/Login';
+import SignUp from './Pages/SignUp/SignUp';
 import TourGuideProfile from './Pages/TripDetails/TourGuides/TourGuideProfile/TourGuideProfile';
 import TourGuides from './Pages/TripDetails/TourGuides/TourGuides';
 import TripDescription from './Pages/TripDetails/TripDescription/TripDescription';
 import TripDetails from './Pages/TripDetails/TripDetails';
+import HotelDetails from "./Pages/HotelDetails/HotelDetails.jsx";
+
 
 const App = () => {
 	return (
@@ -28,6 +32,7 @@ const App = () => {
 							<Route path='/search' element={<SearchPage />} />
 						</Route>
 						<Route path='/hotels' element={<Hotels />} />
+						<Route path='/hotels/:hid' element={<HotelDetails />} />
 						<Route path='/blogs' element={<Blogs />} />
 						<Route path='/blogs/:id' element={<BlogDetails />} />
 						<Route path='/tourguides' element={<TourGuides />} />
@@ -35,6 +40,9 @@ const App = () => {
 							<Route path='tourguide/:id' element={<TourGuideProfile />} />
 							<Route path='trip/:tsid/:tid' element={<TripDescription />} />
 						</Route>
+
+						<Route path='/login' element={<Login />} />
+						<Route path='/signup' element={<SignUp />} />
 					</Route>
 				</Routes>
 				<ToastContainer

@@ -1,5 +1,6 @@
 import { StarIcon } from '@heroicons/react/24/solid';
 import React from 'react';
+import {NavLink} from "react-router-dom";
 
 const HotelsSection = ({ hotels = [], spotName }) => {
 	return (
@@ -22,14 +23,12 @@ const HotelsSection = ({ hotels = [], spotName }) => {
 										<p>{h.rating}</p>
 									</div>
 								</div>
-								<p
+								<NavLink to={`/hotels/${h.hid}`}
 									className='mt-5 mb-2 text-xl font-semibold cursor-pointer hover:underline'
-									onClick={() => {
-										window.open(`${h.website}`, '_blank');
-									}}
+
 								>
 									{h.name}
-								</p>
+								</NavLink>
 								<p className='mb-2 text-sm'>{h.address}</p>
 							</div>
 						);
