@@ -22,3 +22,7 @@
 .react-calendar__tile--active {
   background: #006edc !important;
 }
+
+dialog::backdrop {
+  backdrop-filter: blur(2px);
+}

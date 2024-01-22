@@ -1,16 +1,21 @@
 import React from 'react';
 import tick from './../../img/tick.png'
 import {useNavigate} from "react-router-dom";
+import {useDispatch} from "react-redux";
+import {bookingActions} from "../../store/index.js";
 
 const PaymentSuccessModal = () => {
 
     const navigate = useNavigate();
+    const dispatch = useDispatch()
 
     return (
         <div className="modal-box">
             <form method="dialog">
-                {/* if there is a button in form, it will close the modal */}
-                <button onClick={() => navigate('/')}
+                <button onClick={() => {
+                    navigate('/');
+                    dispatch(bookingActions.bookingClear());
+                }}
                         className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕
                 </button>
             </form>
@@ -20,7 +25,10 @@ const PaymentSuccessModal = () => {
                 <p className='text-[#6f6f6f] mt-2'>We will update your booking request that you requested
                     once the transaction is accepted
                 </p>
-                <button className='btn btn-primary px-10 mt-5 text-white' onClick={() => navigate('/')}>Back to Home
+                <button className='btn btn-primary px-10 mt-5 text-white' onClick={() => {
+                    navigate('/');
+                    dispatch(bookingActions.bookingClear());
+                }}>Back to Home
                 </button>
             </div>
         </div>

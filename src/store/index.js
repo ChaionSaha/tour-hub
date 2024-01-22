@@ -20,7 +20,18 @@ const bookingSlice = createSlice({
             state.minDate = null;
             state.maxDate = null
         }
-    }
+    },
+    middleware: (getDefaultMiddleware) =>
+        getDefaultMiddleware({
+            serializableCheck: {
+                // Ignore these action types
+                ignoredActions: ['book', 'bookingClear'],
+                // Ignore these field paths in all actions
+                ignoredActionPaths: ['payload.minDate', 'book.minDate'],
+                // Ignore these paths in the state
+                ignoredPaths: ['payload.minDate', 'book.minDate'],
+            },
+        }),
 })
 
 

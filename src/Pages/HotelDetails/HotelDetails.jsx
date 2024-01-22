@@ -12,6 +12,7 @@ import 'react-calendar/dist/Calendar.css';
 import CalenderModal from "./CalenderModal.jsx";
 import {useDispatch, useSelector} from "react-redux";
 import {bookingActions} from "../../store/index.js";
+import BlogSection from "../Homepage/EntryPage/BlogSection.jsx";
 
 const today = new Date();
 
@@ -54,7 +55,7 @@ const HotelDetails = () => {
             <div className="container px-5 lg:px-0 mt-10">
                 <div className="flex flex-col lg:flex-row justify-between gap-y-5 lg:items-center">
                     <p className='text-4xl font-bold'>{hotelDetails.name}</p>
-                    <p className='bg-primary font-bold items-center text-xl w-fit gap-x-2 flex px-5 py-3 rounded-lg text-white'>
+                    <p className='bg-primary font-bold items-center text-xl w-fit gap-x-2 flex lg:px-5 p-2 px-5 lg:py-3 rounded-lg text-white'>
                         <StarIcon className='w-4 text-[#FF9243]'/>
                         {hotelDetails.rating}
                     </p>
@@ -66,8 +67,8 @@ const HotelDetails = () => {
                     <p>{hotelDetails.address}</p>
                 </div>
 
-                <div className="flex justify-between gap-x-10">
-                    <div className="w-[60%]">
+                <div className="flex flex-col gap-y-10 lg:flex-row justify-between gap-x-10">
+                    <div className="lg:w-[60%]">
                         <p className='text-2xl font-bold mt-10'>About Hotel</p>
                         <ReactQuill
                             theme='bubble'
@@ -77,7 +78,7 @@ const HotelDetails = () => {
                             className='mt-5'
                         />
                     </div>
-                    <div className="w-[30%] h-fit flex flex-col gap-y-5 bg-base-100 p-5 rounded-xl border">
+                    <div className="lg:w-[30%] h-fit flex flex-col gap-y-5 bg-base-100 p-5 rounded-xl border">
                         <div className="flex items-end gap-x-1 justify-center py-5 border-b">
                             <p className='text-4xl font-bold'>${hotelDetails.price}</p> {' '}
                             <p>/per day</p>
@@ -119,6 +120,8 @@ const HotelDetails = () => {
                     </div>
                 </div>
             </div>
+
+            <BlogSection/>
         </div>
     );
 };

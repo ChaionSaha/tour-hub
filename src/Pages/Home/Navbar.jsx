@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {useAuthState, useSignOut} from 'react-firebase-hooks/auth';
-import {NavLink, useLocation} from 'react-router-dom';
+import {NavLink, useLocation, useNavigate} from 'react-router-dom';
 import auth from '../../../firebase.init';
 import logo from '../../img/logo.png';
 import './Home.scss';
@@ -8,12 +8,15 @@ import './Home.scss';
 const Navbar = () => {
     const [isShown, setIsShown] = useState(false);
     const location = useLocation();
+    const ref = useRef(null);
     useEffect(() => {
         setIsShown(false);
+        // if(ref.current.className.contains()
     }, [location]);
 
     const [user] = useAuthState(auth);
     const [signOut] = useSignOut(auth);
+    const navigate = useNavigate();
 
 
     return (
@@ -34,13 +37,14 @@ const Navbar = () => {
                     <NavLink to='/tourguides'>Tour Guides</NavLink>
 
                     {user ? (
-                        <details className='dropdown'>
-                            <summary className='m-1 btn btn-ghost'>
+                        <div className='dropdown dropdown-hover dropdown-end' ref={ref}>
+                            <div tabIndex={0} role="button" className='m-1 btn btn-ghost'>
                                 <i className='text-2xl bi bi-person-circle'></i>
-                            </summary>
-                            <ul className='p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52'>
+                            </div>
+                            <ul tabIndex={0}
+                                className='p-2 shadow-xl border menu dropdown-content z-[1] bg-base-100 rounded-box w-52'>
                                 <li>
-                                    <button className='text-base'>Profile</button>
+                                    <button onClick={() => navigate('/profile')} className='text-base'>Profile</button>
                                 </li>
                                 <li>
                                     <button
@@ -53,13 +57,13 @@ const Navbar = () => {
                                     </button>
                                 </li>
                             </ul>
-                        </details>
+                        </div>
                     ) : (
                         <NavLink to='/login'>Login</NavLink>
                     )}
                 </div>
                 <div
-                    className={`fixed h-[100vh]  text-3xl border font-bold w-[100vw] top-0 left-0 z-[999] flex flex-col justify-center items-center lg:hidden bg-base-100 gap-y-10 ${
+                    className={`fixed h-[100vh]  text-3xl border font-bold w-[100vw] top-0 left-0 z-[999] justify-center flex flex-col items-center lg:hidden bg-base-100 gap-y-10 ${
                         isShown ? 'translate-x-0' : ' translate-x-[-100%]'
                     } duration-150`}
                 >
@@ -69,23 +73,27 @@ const Navbar = () => {
                     >
                         <i className='bi bi-x'></i>
                     </button>
-                    <NavLink to='/hotels'>Hotels</NavLink>
-                    <NavLink to='/blogs'>Trips Blogs</NavLink>
-                    <NavLink to='/tourguides'>Tour Guides</NavLink>
+
 
                     {user ? (
-                        <button
+                        <p
                             onClick={async () => {
 
                                 signOut();
                             }}
-                            className='hover:border-black btn btn-ghost btn-sm hover:border hover:bg-transparent'
+                            className=' absolute bottom-[10%] text-2xl  font-bold text-error btn btn-ghost btn-sm '
                         >
                             Sign Out
-                        </button>
+                        </p>
                     ) : (
-                        <NavLink to='/login'>Login</NavLink>
+                        <NavLink to='/login' className='mt-36'>Login</NavLink>
                     )}
+                    {user && <NavLink to='/profile'>Profile</NavLink>}
+                    <NavLink to='/hotels'>Hotels</NavLink>
+                    <NavLink to='/blogs'>Trips Blogs</NavLink>
+                    <NavLink to='/tourguides'>Tour Guides</NavLink>
+
+
                 </div>
             </div>
         </div>

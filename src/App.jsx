@@ -22,6 +22,7 @@ import HotelDetails from "./Pages/HotelDetails/HotelDetails.jsx";
 import RequiredAuth from "./components/RequiredAuth.jsx";
 import Payment from "./Pages/Payment/Payment.jsx";
 import ProtectedLogin from "./components/ProtectedLogin.jsx";
+import UserProfile from "./Pages/UserProfile/UserProfile.jsx";
 
 
 const App = () => {
@@ -53,6 +54,12 @@ const App = () => {
                             <ProtectedLogin>
                                 <SignUp/>
                             </ProtectedLogin>
+                        }/>
+
+                        <Route path='/profile' element={
+                            <RequiredAuth>
+                                <UserProfile/>
+                            </RequiredAuth>
                         }/>
 
                     </Route>
