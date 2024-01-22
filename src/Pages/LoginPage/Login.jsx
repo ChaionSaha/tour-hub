@@ -5,7 +5,7 @@ import {NavLink, useLocation, useNavigate} from 'react-router-dom';
 import {toast} from 'react-toastify';
 import auth from '../../../firebase.init';
 import CustomTitle from '../Shared/CustomTitle';
-import axiosHeader from "../../api/axios.js";
+import axios from "axios";
 
 const Login = () => {
     const {
@@ -27,7 +27,7 @@ const Login = () => {
     const handleLogin = async (formData) => {
         const {user} = await signInWithEmailAndPassword(formData.email, formData.pass);
         if (user) {
-            await axiosHeader(`${import.meta.env.VITE_serverLink}/user-login?email=${user.email}`)
+            await axios(`${import.meta.env.VITE_serverLink}/user-login?email=${user.email}`)
                 .catch((err) => {
                     toast.error(err.message);
                 });
