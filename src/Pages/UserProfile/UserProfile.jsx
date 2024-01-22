@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import {useAuthState} from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init.js";
-import axios from "axios";
 import {toast} from "react-toastify";
 import {NavLink} from "react-router-dom";
+import axiosPrivate from "../../api/axiosPrivate.jsx";
 
 const UserProfile = () => {
     const [imgLink] = useState(
@@ -16,10 +16,10 @@ const UserProfile = () => {
 
     useEffect(() => {
         const run = async () => {
-            await axios(`${import.meta.env.VITE_serverLink}/get-user?email=${user.email}`).then(({data}) => {
+            await axiosPrivate(`${import.meta.env.VITE_serverLink}/get-user?email=${user.email}`).then(({data}) => {
                 setUserDetails(data);
             }).catch(err => toast.error(err.message));
-            await axios(`${import.meta.env.VITE_serverLink}/get-bookings-by-user?email=${user.email}`).then(({data}) => {
+            await axiosPrivate(`${import.meta.env.VITE_serverLink}/get-bookings-by-user?email=${user.email}`).then(({data}) => {
                 setBookings(data);
             }).catch(err => toast.error(err.message));
         }

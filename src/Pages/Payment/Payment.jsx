@@ -10,6 +10,7 @@ import auth from "../../../firebase.init.js";
 import axios from "axios";
 import {toast} from "react-toastify";
 import PaymentSuccessModal from "./PaymentSuccessModal.jsx";
+import axiosPrivate from "../../api/axiosPrivate.jsx";
 
 const dateToString = (date = new Date()) => {
     const dateString = date.toLocaleDateString('en-US', {
@@ -79,7 +80,7 @@ const Payment = () => {
 
     useEffect(() => {
         const run = async () => {
-            await axios(`${import.meta.env.VITE_serverLink}/get-user?email=${user.email}`).then(res => setUserDetails(res.data)).catch(err => toast.error(err.message));
+            await axiosPrivate(`${import.meta.env.VITE_serverLink}/get-user?email=${user.email}`).then(res => setUserDetails(res.data)).catch(err => toast.error(err.message));
         }
         run().catch(err => toast.error(err.message));
     }, [user.email]);
