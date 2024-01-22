@@ -1,6 +1,7 @@
 import axios from 'axios';
 import {signOut} from 'firebase/auth';
-import auth from '../firebase.init';
+import auth from "../../firebase.init.js";
+
 
 const axiosPrivate = axios.create({withCredentials: true});
 
